@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, ArrowRight, ExternalLink, Layers, ShieldCheck, Building, Box, Wrench } from 'lucide-react';
 import WorkWithExperts from '../components/WorkWithExperts';
 import { projectsData } from '../data/projectsData';
+import { assetPath } from '../utils/assetPath';
 
 export default function ProjectsPage({ onOpenQuoteModal, onNavigate }) {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -127,7 +128,7 @@ export default function ProjectsPage({ onOpenQuoteModal, onNavigate }) {
                           src={imgUrl}
                           alt={`${project.title} photo ${iIdx + 1}`}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                          onError={(e) => { e.target.src = '/images/hero-bg.jpg'; }}
+                          onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
                         />
                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                           <ExternalLink className="w-5 h-5 text-white" />

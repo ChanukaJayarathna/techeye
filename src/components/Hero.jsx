@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, ShieldCheck, ArrowRight, Video, Sparkles, Cpu, Eye, Wifi } from 'lucide-react';
 import { partnersData } from '../data/partnersData';
+import { assetPath } from '../utils/assetPath';
 
 export default function Hero({ onOpenQuoteModal, onOpenVideoModal }) {
   const hotspots = [
@@ -105,7 +106,7 @@ export default function Hero({ onOpenQuoteModal, onOpenVideoModal }) {
                 
                 {/* Hero Camera Image */}
                 <img 
-                  src="/images/hero-bg.jpg" 
+                  src=assetPath('/images/hero-bg.jpg') 
                   alt="Modern Security IP Camera System" 
                   className="w-full h-full object-cover opacity-85 hover:scale-105 transition-transform duration-700"
                   onError={(e) => {
