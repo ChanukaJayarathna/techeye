@@ -1,3 +1,5 @@
+import { assetPath } from '../utils/assetPath';
+
 export const googleRatingInfo = {
   rating: 4.9,
   totalReviews: 250,
@@ -11,7 +13,7 @@ export const testimonialsData = [
     role: 'Homeowner, Yakkala',
     time: '1 Month Ago',
     rating: 5,
-    avatar: '/images/testimonials/sat-1.png',
+    avatar: assetPath('/images/testimonials/sat-1.png'),
     comment: 'Best CCTV installation company in Yakkala. Extremely prompt service, super clean wire management, and reasonable pricing!'
   },
   {
@@ -20,7 +22,7 @@ export const testimonialsData = [
     role: 'Business Owner',
     time: '1 Month Ago',
     rating: 5,
-    avatar: '/images/testimonials/sat-2.png',
+    avatar: assetPath('/images/testimonials/sat-2.png'),
     comment: 'High professional installation team and ultra-fast service. They set up our 16-camera IP system in less than a day!'
   },
   {
@@ -29,7 +31,7 @@ export const testimonialsData = [
     role: 'Corporate Manager',
     time: '2 Months Ago',
     rating: 5,
-    avatar: '/images/testimonials/sat-3.jpg',
+    avatar: assetPath('/images/testimonials/sat-3.jpg'),
     comment: 'Highly recommend this place for your CCTV and Access Control system requirements. Very attentive team and excellent after-sales support.'
   },
   {
@@ -38,7 +40,7 @@ export const testimonialsData = [
     role: 'Villa Owner',
     time: '2 Months Ago',
     rating: 5,
-    avatar: '/images/testimonials/sat-4.png',
+    avatar: assetPath('/images/testimonials/sat-4.png'),
     comment: 'Recently had a CCTV system installed by TechHyEye and could not be happier with the clarity of 4K cameras and mobile app integration!'
   },
   {
@@ -47,7 +49,7 @@ export const testimonialsData = [
     role: 'Commercial Client',
     time: '3 Months Ago',
     rating: 5,
-    avatar: '/images/testimonials/sat-6.png',
+    avatar: assetPath('/images/testimonials/sat-6.png'),
     comment: 'I recently had CCTV installed and was impressed by the professionalism, helpfulness, and technical expertise of TechHyEye engineers.'
   },
   {
@@ -56,7 +58,7 @@ export const testimonialsData = [
     role: 'Residential Client',
     time: '3 Months Ago',
     rating: 5,
-    avatar: '/images/testimonials/sat-5.png',
+    avatar: assetPath('/images/testimonials/sat-5.png'),
     comment: 'I recently had Wireless CCTV installed and was very pleased with the exceptional video clarity and prompt after-sales support.'
   },
   {
@@ -65,7 +67,7 @@ export const testimonialsData = [
     role: 'Office Manager',
     time: '4 Months Ago',
     rating: 5,
-    avatar: '/images/testimonials/sat-7.png',
+    avatar: assetPath('/images/testimonials/sat-7.png'),
     comment: 'Great service, easy to communicate, transparent pricing, and professionally executed installation without any disruption to work.'
   },
   {
@@ -74,7 +76,7 @@ export const testimonialsData = [
     role: 'Director MRPPartner',
     time: 'Verified Client',
     rating: 5,
-    avatar: '/images/testimonials/say-2.jpg',
+    avatar: assetPath('/images/testimonials/say-2.jpg'),
     comment: 'I Recently Got An Outdoor Camera System, Two Indoor Wireless Cameras And A Home Alarm System From TechHyEye, Boralesgamuwa. Their Services Are Excellent From Start To Finish.'
   },
   {
@@ -83,7 +85,7 @@ export const testimonialsData = [
     role: 'Retired Principal - Visakha Vidyalaya',
     time: 'Verified Client',
     rating: 5,
-    avatar: '/images/testimonials/say-3.jpg',
+    avatar: assetPath('/images/testimonials/say-3.jpg'),
     comment: 'I Recently Installed A CCTV System For My Home Security Needs From TechHyEye(Pvt). Their Services Are Excellent From Beginning To The End. Highly Recommend This Company!'
   }
 ];

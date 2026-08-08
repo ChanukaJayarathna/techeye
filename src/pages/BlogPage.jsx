@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Search, Calendar, User, ArrowRight, BookOpen, X, SlidersHorizontal } from 'lucide-react';
 import WorkWithExperts from '../components/WorkWithExperts';
 import { blogData, blogCategories } from '../data/blogData';
+import { assetPath } from '../utils/assetPath';
 
 export default function BlogPage({ onOpenQuoteModal, onNavigate }) {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -103,7 +104,7 @@ export default function BlogPage({ onOpenQuoteModal, onNavigate }) {
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  onError={(e) => { e.target.src = '/images/hero-bg.jpg'; }}
+                  onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
                 />
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-brand-cyan text-white shadow-md">
@@ -196,7 +197,7 @@ export default function BlogPage({ onOpenQuoteModal, onNavigate }) {
                 src={activePost.image}
                 alt={activePost.title}
                 className="w-full h-full object-cover"
-                onError={(e) => { e.target.src = '/images/hero-bg.jpg'; }}
+                onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
               />
             </div>
 

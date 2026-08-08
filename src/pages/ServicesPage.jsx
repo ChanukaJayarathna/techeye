@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight, Shield, Search, SlidersHorizontal } from 'lucide-react';
 import WorkWithExperts from '../components/WorkWithExperts';
 import { servicesData, serviceCategories } from '../data/servicesData';
+import { assetPath } from '../utils/assetPath';
 
 export default function ServicesPage({ onOpenQuoteModal, onNavigate }) {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -108,7 +109,7 @@ export default function ServicesPage({ onOpenQuoteModal, onNavigate }) {
                         src={service.image}
                         alt={service.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                        onError={(e) => { e.target.src = '/images/hero-bg.jpg'; }}
+                        onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent opacity-80"></div>
                       <div className="absolute top-4 left-4">

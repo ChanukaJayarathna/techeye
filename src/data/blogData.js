@@ -1,3 +1,5 @@
+import { assetPath } from '../utils/assetPath';
+
 export const blogData = [
   {
     id: 'blog-1',
@@ -5,7 +7,7 @@ export const blogData = [
     date: 'August 02, 2026',
     author: 'TechHyEye Security Team',
     category: 'Articles',
-    image: '/images/blog/5 Reasons Why Every Business Needs CCTV Surveillance.png',
+    image: assetPath('/images/blog/5 Reasons Why Every Business Needs CCTV Surveillance.png'),
     excerpt: 'In today’s fast-paced business environment, safeguarding your assets, staff, and intellectual property is more critical than ever. Here are 5 key reasons why a modern CCTV system is an essential investment.',
     content: `
       <p class="mb-4">In today’s fast-paced business environment, safeguarding your physical assets, employees, and intellectual property is more critical than ever before. Whether operating a retail storefront, a corporate office, or a large industrial warehouse, installing a modern CCTV (Closed-Circuit Television) system is no longer a luxury—it’s a foundational requirement for operational security and peace of mind.</p>
@@ -34,7 +36,7 @@ export const blogData = [
     date: 'July 24, 2026',
     author: 'Smart Home Specialist',
     category: 'Guides',
-    image: '/images/blog/Smart Home Alarms The Future of Residential Security.jpg',
+    image: assetPath('/images/blog/Smart Home Alarms The Future of Residential Security.jpg'),
     excerpt: 'Discover how smart wireless alarm systems integrate with mobile apps, motion sensors, and automated entry controls to offer round-the-clock home protection.',
     content: `
       <p class="mb-4">Home security has evolved far beyond traditional loud sirens and keypads on the wall. Today's smart home alarm systems combine wireless sensors, mobile push notifications, cloud connectivity, and AI detection to offer homeowners unprecedented control and peace of mind.</p>
@@ -57,7 +59,7 @@ export const blogData = [
     date: 'July 15, 2026',
     author: 'Network Engineering Lead',
     category: 'Articles',
-    image: '/images/blog/Fiber Optic vs. Copper Networking What’s Right for You.png',
+    image: assetPath('/images/blog/Fiber Optic vs. Copper Networking What’s Right for You.png'),
     excerpt: 'Comparing speed, bandwidth, distance limits, and cost. Learn when to choose high-speed fiber optics over traditional Cat6 ethernet cables.',
     content: `
       <p class="mb-4">When designing or upgrading a building's IT infrastructure, one of the most fundamental choices is selecting the right cabling backbone: Fiber Optic vs. Copper (Cat6/Cat6A). Both play vital roles in modern networks, but understanding their strengths is key to a cost-effective setup.</p>
@@ -80,7 +82,7 @@ export const blogData = [
     date: 'June 28, 2026',
     author: 'Access Control Consultant',
     category: 'Guides',
-    image: '/images/blog/Top 3 Access Control Systems for Modern Workplaces.jpg',
+    image: assetPath('/images/blog/Top 3 Access Control Systems for Modern Workplaces.jpg'),
     excerpt: 'From contactless facial recognition to RFID keycards and mobile Bluetooth credentials, explore the top access control technologies for commercial buildings.',
     content: `
       <p class="mb-4">Managing physical security and employee access is a top priority for corporate managers. Here is a breakdown of the three most popular access control technologies being deployed in modern workplaces today.</p>

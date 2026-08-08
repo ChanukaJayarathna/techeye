@@ -6,6 +6,7 @@ import {
   Video, Wifi, Server, PhoneCall 
 } from 'lucide-react';
 import WorkWithExperts from '../components/WorkWithExperts';
+import { assetPath } from '../utils/assetPath';
 
 export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast }) {
   const [isDownloading, setIsDownloading] = useState(false);
@@ -31,25 +32,25 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
     {
       title: 'Integrity',
       icon: ShieldCheck,
-      img: '/images/about/values/Integrity.png',
+      img: assetPath('/images/about/values/Integrity.png'),
       desc: 'Transparent pricing, 100% genuine products, and uncompromised honesty in all client interactions.'
     },
     {
       title: 'Excellence',
       icon: Award,
-      img: '/images/about/values/Quality.png',
+      img: assetPath('/images/about/values/Quality.png'),
       desc: 'Superior installation standards, cable management, and high-performance equipment selection.'
     },
     {
       title: 'Reliability',
       icon: Headphones,
-      img: '/images/about/values/Innovation.png',
+      img: assetPath('/images/about/values/Innovation.png'),
       desc: 'Round-the-clock technical support, rapid emergency response, and 99.9% system uptime.'
     },
     {
       title: 'Client Focus',
       icon: Users,
-      img: '/images/about/values/Customer Focus.png',
+      img: assetPath('/images/about/values/Customer Focus.png'),
       desc: 'Tailored solutions designed around your specific security needs, budget, and long-term goals.'
     }
   ];
@@ -70,25 +71,25 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
       name: 'Eng. K. A. Perera',
       title: 'Chief Technology Officer',
       specialty: 'Network Architecture & Optical Fiber Systems',
-      image: '/images/about/our team.jpg'
+      image: assetPath('/images/about/our team.jpg')
     },
     {
       name: 'M. H. R. Fernando',
       title: 'Head of Security Engineering',
       specialty: 'Commercial CCTV & AI Surveillance Integration',
-      image: '/images/about/about-1.jpg'
+      image: assetPath('/images/about/about-1.jpg')
     },
     {
       name: 'S. T. De Silva',
       title: 'Lead Systems Engineer',
       specialty: 'Biometric Access Control & PABX Networks',
-      image: '/images/about/about-2.jpg'
+      image: assetPath('/images/about/about-2.jpg')
     },
     {
       name: 'R. M. Jayasinghe',
       title: 'Technical Operations Manager',
       specialty: '24/7 Field Maintenance & Client Relations',
-      image: '/images/about/What We Do.jpg'
+      image: assetPath('/images/about/What We Do.jpg')
     }
   ];
 
@@ -160,10 +161,10 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
             {/* Right Graphic Box */}
             <div className="relative rounded-3xl overflow-hidden p-1 bg-gradient-to-tr from-brand-cyan via-brand-blue to-purple-600 shadow-2xl">
               <img
-                src="/images/about/about-1.jpg"
+                src={assetPath('/images/about/about-1.jpg')}
                 alt="TechHyEye Team at Work"
                 className="w-full h-[400px] sm:h-[450px] object-cover rounded-[22px]"
-                onError={(e) => { e.target.src = '/images/hero-bg.jpg'; }}
+                onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
               />
             </div>
           </div>
@@ -177,10 +178,10 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
             {/* Left Curved Image */}
             <div className="relative rounded-[3rem] overflow-hidden border-2 border-brand-cyan/40 shadow-2xl order-2 lg:order-1">
               <img
-                src="/images/about/What We Do.jpg"
+                src={assetPath('/images/about/What We Do.jpg')}
                 alt="What We Do - Security Installation"
                 className="w-full h-[380px] sm:h-[420px] object-cover"
-                onError={(e) => { e.target.src = '/images/about/about-2.jpg'; }}
+                onError={(e) => { e.target.src = assetPath('/images/about/about-2.jpg'); }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-card border border-white/20">
@@ -304,10 +305,10 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
             <div className="lg:col-span-6">
               <div className="relative rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl bg-brand-dark p-2">
                 <img
-                  src="/images/about/Support & Maintenance.jpg"
+                  src={assetPath('/images/about/Support & Maintenance.jpg')}
                   alt="Support and Maintenance"
                   className="w-full h-[400px] object-cover rounded-2xl"
-                  onError={(e) => { e.target.src = '/images/hero-bg.jpg'; }}
+                  onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
                 />
               </div>
             </div>
@@ -360,7 +361,7 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
       <section className="relative py-20 overflow-hidden bg-slate-950 border-y border-white/10">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="/images/about/Why Choose Our Support Services.jpg"
+            src={assetPath('/images/about/Why Choose Our Support Services.jpg')}
             alt="Support Background"
             className="w-full h-full object-cover"
             onError={(e) => { e.target.style.display = 'none'; }}
@@ -417,7 +418,7 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => { e.target.src = '/images/hero-bg.jpg'; }}
+                    onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
                   />
                 </div>
                 <div className="p-5 space-y-2">
