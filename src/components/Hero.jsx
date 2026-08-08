@@ -106,7 +106,7 @@ export default function Hero({ onOpenQuoteModal, onOpenVideoModal }) {
                 
                 {/* Hero Camera Image */}
                 <img 
-                  src=assetPath('/images/hero-bg.jpg') 
+                  src={assetPath('/images/hero-bg.jpg')} 
                   alt="Modern Security IP Camera System" 
                   className="w-full h-full object-cover opacity-85 hover:scale-105 transition-transform duration-700"
                   onError={(e) => {

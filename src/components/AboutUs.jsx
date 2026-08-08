@@ -51,7 +51,7 @@ export default function AboutUs({ onOpenQuoteModal, onTriggerToast }) {
             <div className="relative rounded-3xl overflow-hidden p-1 bg-gradient-to-tr from-brand-cyan via-brand-blue to-purple-600 shadow-2xl shadow-brand-cyan/20">
               <div className="relative rounded-[22px] overflow-hidden bg-brand-dark aspect-[4/3] sm:aspect-[16/10]">
                 <img
-                  src=assetPath('/images/about/about-1.jpg')
+                  src={assetPath('/images/about/about-1.jpg')}
                   alt="TechHyEye Technician Security Camera Installation"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   onError={(e) => {
@@ -79,7 +79,7 @@ export default function AboutUs({ onOpenQuoteModal, onTriggerToast }) {
             <div className="hidden sm:grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden border border-white/10 h-32">
                 <img
-                  src=assetPath('/images/about/about-2.jpg')
+                  src={assetPath('/images/about/about-2.jpg')}
                   alt="IP Camera Technology"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                   onError={(e) => {

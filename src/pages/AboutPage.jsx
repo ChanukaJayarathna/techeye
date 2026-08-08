@@ -161,7 +161,7 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
             {/* Right Graphic Box */}
             <div className="relative rounded-3xl overflow-hidden p-1 bg-gradient-to-tr from-brand-cyan via-brand-blue to-purple-600 shadow-2xl">
               <img
-                src=assetPath('/images/about/about-1.jpg')
+                src={assetPath('/images/about/about-1.jpg')}
                 alt="TechHyEye Team at Work"
                 className="w-full h-[400px] sm:h-[450px] object-cover rounded-[22px]"
                 onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
@@ -178,7 +178,7 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
             {/* Left Curved Image */}
             <div className="relative rounded-[3rem] overflow-hidden border-2 border-brand-cyan/40 shadow-2xl order-2 lg:order-1">
               <img
-                src=assetPath('/images/about/What We Do.jpg')
+                src={assetPath('/images/about/What We Do.jpg')}
                 alt="What We Do - Security Installation"
                 className="w-full h-[380px] sm:h-[420px] object-cover"
                 onError={(e) => { e.target.src = assetPath('/images/about/about-2.jpg'); }}
@@ -305,7 +305,7 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
             <div className="lg:col-span-6">
               <div className="relative rounded-3xl overflow-hidden border border-brand-cyan/30 shadow-2xl bg-brand-dark p-2">
                 <img
-                  src=assetPath('/images/about/Support & Maintenance.jpg')
+                  src={assetPath('/images/about/Support & Maintenance.jpg')}
                   alt="Support and Maintenance"
                   className="w-full h-[400px] object-cover rounded-2xl"
                   onError={(e) => { e.target.src = assetPath('/images/hero-bg.jpg'); }}
@@ -361,7 +361,7 @@ export default function AboutPage({ onOpenQuoteModal, onNavigate, onTriggerToast
       <section className="relative py-20 overflow-hidden bg-slate-950 border-y border-white/10">
         <div className="absolute inset-0 opacity-20">
           <img
-            src=assetPath('/images/about/Why Choose Our Support Services.jpg')
+            src={assetPath('/images/about/Why Choose Our Support Services.jpg')}
             alt="Support Background"
             className="w-full h-full object-cover"
             onError={(e) => { e.target.style.display = 'none'; }}
